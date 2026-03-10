@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -18,92 +19,82 @@
         </nav>
     </header>
 
+
     <section class="hero white">
         <h1>Designing Quiet Impact</h1>
         <p>디자인을 통해 공공의 메시지를 효과적으로 전달하는 시각 콘텐츠를 만든다.</p>
     </section>
 
+
     <section id="about" class="section">
         <h2>About</h2>
 
         <p class="about-text">
-            영상, 모션디자인, 일러스트레이션을 중심으로 시각 콘텐츠를 제작하고 있으며, 영상매체, 3D 가상공간 디자인에 흥미를 가지고 있다.
+            영상, 모션디자인, 일러스트레이션을 중심으로 시각 콘텐츠를 제작하고 있으며,
+            영상매체, 3D 가상공간 디자인에 흥미를 가지고 있다.
             특히 공공 PR과 마케팅 분야에서 디자인이 전달하는 메시지를 결합하는 직업에 관심을 가지고 있으며,
             시각적 요소를 통해 소비자들에게 정보를 효과적으로 전달하고 소통하는 작업을 지향한다.
-
-
-
         </p>
 
         <p class="about-text">
-            클래식 음악의 작품과 역사, 산책과 여행을 통해 다양한 공간과 지리적 환경을 경험하고 인식, 사진을 통해 공간과 경험을 기록
-            이러한 감각을 화면 구성과 분위기 연출에 반영하고 있다.
+            클래식 음악의 작품과 역사, 산책과 여행을 통해 다양한 공간과 지리적 환경을 경험하고 인식,
+            사진을 통해 공간과 경험을 기록 이러한 감각을 화면 구성과 분위기 연출에 반영하고 있다.
         </p>
 
     </section>
 
-    <section id="about" class="section black">
+
+    <section class="section black">
         <h2>About</h2>
 
         <p class="about-text">
-            화면 구성 능력과 색채 감각을 강점으로 가지고 있다. 시선의 흐름과 정보 전달력을 고려한 화면 설계를 중요하게 생각하며, 색채를 활용해 콘텐츠의 분위기와 메시지를 명확하게 전달하는 작업을
-            지향한다.
-            또한 소비자 심리와 광고·홍보 효과에 대한 이해를 바탕으로, 미적 완성도와 실제 전달력을 함께 고려한 시각 콘텐츠를 제작하고자 한다.
-
-
-
+            화면 구성 능력과 색채 감각을 강점으로 가지고 있다. 시선의 흐름과 정보 전달력을 고려한 화면 설계를 중요하게 생각하며,
+            색채를 활용해 콘텐츠의 분위기와 메시지를 명확하게 전달하는 작업을 지향한다.
+            또한 소비자 심리와 광고·홍보 효과에 대한 이해를 바탕으로,
+            미적 완성도와 실제 전달력을 함께 고려한 시각 콘텐츠를 제작하고자 한다.
         </p>
 
         <p class="about-text">
-
-
-
-
-
             동아리 활동을 통해 홍보계로서 다양한 홍보 작업물을 제작하고 인쇄하여 전시한 경험이 있다.
             이 과정에서 디자인이 실제 매체로 구현되는 과정과 콘텐츠의 전달 방식에 대해 고민할 수 있었다.
-            개인적으로는 일러스트 작업을 통해 월 최대 약 50만 원의 수익을 창출한 경험이 있으며, 창작 활동을 실제 시장과 연결하는 경험을 쌓았다.
+            개인적으로는 일러스트 작업을 통해 월 최대 약 50만 원의 수익을 창출한 경험이 있으며,
+            창작 활동을 실제 시장과 연결하는 경험을 쌓았다.
             또한 공모전에 도전하며 다양한 주제와 형식의 작업을 시도하고 있다.
-
-
-
         </p>
 
         <p class="about-text">
-
-
-
-
-
             영상, 모션, 공간 기반 디자인을 결합한 몰입감 있는 시각 콘텐츠 제작을 목표로 하며,
             공공 PR과 마케팅 분야에서 효과적으로 활용될 수 있는 디자인을 지향한다.
-
-
         </p>
-
 
     </section>
 
+
     <section id="works" class="section white">
+
         <h2>Works</h2>
 
         <div class="works-grid">
+
             <div class="work-item">
-                <img src="images/project1.jpg" alt="project1">
+                <img src="images/project1.jpg" class="work-thumb" onclick="openModal()">
             </div>
 
             <div class="work-item">
-                <img src="images/project2.jpg" alt="project2">
+                <img src="images/project2.jpg" onclick="openModal2()">
             </div>
 
             <div class="work-item">
-                <img src="images/project3.jpg" alt="project3">
+                <img src="images/project3.jpg" onclick="openModal3()" alt="project3">
             </div>
+
         </div>
 
     </section>
 
+
     <section id="video" class="section black">
+
         <h2>Video Works</h2>
 
         <div class="video-grid">
@@ -144,10 +135,136 @@
             </div>
 
         </div>
-        </div>
+
     </section>
 
+
+    <!-- Modal -->
+
+    <div id="workModal" class="modal">
+
+        <div class="modal-box">
+
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <div class="modal-images">
+
+                <div class="main-images">
+                    <img src="images/project1.jpg">
+                    <img src="images/main2.jpg">
+                </div>
+
+                <div class="ref-images">
+                    <img src="images/ref1.jpg">
+                    <img src="images/ref2.jpg">
+                </div>
+
+            </div>
+
+            <div class="modal-text">
+                <p>
+                    하이든 교향곡 104번과 멘델스존 교향곡 3번을 주제로 한 디자인이다.<br><br>
+
+                    하이든의 음악의 소박함과 서정성을 시각화하여 베이지와 인디고를 배합해
+                    시각적으로 안정적인 색감을 만들어냈다.<br><br>
+
+                    레이아웃과 타이포에 외적인 조형과 장식은 덜어내고,
+                    간결한 그래픽을 메인으로 두고 작업하여
+                    하이든 특유의 소박함을 강조하고자 했다.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="workModal2" class="modal">
+
+        <div class="modal-box">
+
+            <span class="close" onclick="closeModal2()">&times;</span>
+
+            <div class="modal-images">
+
+                <div class="main-images">
+                    <img src="images/project2.jpg">
+                </div>
+
+                <div class="ref-images">
+                    <img src="images/ref3.jpg">
+                    <img src="images/ref4.jpg">
+                    <img src="images/ref5.jpg">
+                </div>
+
+            </div>
+
+            <div class="modal-text">
+
+                <p>
+
+                    슈만 교향곡 3번, 라인을 주제로 한 포스터이다.<br><br>
+
+                    라인은 라인강에서 가져온 제목으로,
+                    작품은 전반적으로 슈만이 바라보던 라인 강의 즐겁고 신선한 장면을 그려내고 있다.
+                    라인강은 슈만에게 삶을 준 원동력이자 삶을 마감하려 한 비극의 무대였으며,
+                    이 라인강은 슈만이 최고걸작을 탄생시키게 하는데 영감을 주었다.<br><br>
+
+                    생기넘치는 1악장에서 영감을 받아 밝고 화사한 색감을 사용했으며,
+                    액체의 성질을 가져와 수채화 질감을 활용해 작업하였다.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="workModal3" class="modal">
+
+        <div class="modal-box">
+
+            <span class="close" onclick="closeModal3()">&times;</span>
+
+            <div class="modal-images">
+
+                <div class="main-images">
+                    <img src="images/project3.jpg">
+                </div>
+
+                <div class="ref-images">
+                    <img src="images/ref6.jpg">
+                    <img src="images/ref7.jpg">
+                </div>
+
+            </div>
+
+            <div class="modal-text">
+
+                <p>
+
+                    멘델스존의 <br>
+                    <strong>핑갈의 동굴</strong>과 <strong>교향곡 3번, 스코티쉬</strong>를 주제로 한 포스터이다.<br><br>
+
+                    여행과 항해의 의미를 지닌 <strong>페른베</strong>를 주제로 하여
+                    파도가 몰아치는 그래픽을 메인으로 사용하였다.
+                    이는 파도가 부딪히는 핑갈의 동굴의 이미지와도 연결되도록 구성하였다.<br><br>
+
+                    가우시안 블러 기법을 사용하여 포스터 전반에 가독성과 깔끔한 레이아웃을 추구하였다.
+
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
+```
